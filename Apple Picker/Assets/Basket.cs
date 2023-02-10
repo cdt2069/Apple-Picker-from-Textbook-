@@ -39,6 +39,7 @@ public class Basket : MonoBehaviour
         {
             Destroy(collided);
             scoreCounter.Add100();
+            HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
         }
     }
 }
